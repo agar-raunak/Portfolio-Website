@@ -12,19 +12,21 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <script src="https://kit.fontawesome.com/e5aa639bc0.js" crossorigin="anonymous"></script>
+
+        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     </head>
     <body>
         <header>
             <div class="logo">
-                <img src="img/logo.png" alt="RA">
+                <img src="img/Group 3.png" alt="RA">
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
             <nav class="nav">
                 <ul class="nav_list">
-                    <li class = "nav-item"><a href="#about_me" class="nav-link">About Me</a></li>
-                    <li class = "nav-item"><a href="#myprojects" class="nav-link">My projects</a></li>
+                    <li class = "nav-item"><a href="#about" class="nav-link">About Me</a></li>
+                    <li class = "nav-item"><a href="#work" class="nav-link">My projects</a></li>
                     <li class = "nav-item"><a href="#volunteering" class="nav-link">Volunteering</a></li>
                     <li class = "nav-item"><a href="#hobbies" class="nav-link">Hobbies</a></li>
                     <li class = "nav-item"><a href="#contactme" class="nav-link">Contact me</a></li>
@@ -34,14 +36,175 @@
         </header>
         <!--Introduction-->
         <section class="intro" id="home">
+
             <h1 class="section_title section_title_intro">
                 Hi, I am <strong> Raunak Agarwal</strong>
             </h1>
+
             <p class="section_subtitle section_subtitle_intro">Computer Science Student</p>
+            
             <img src="img/raunak.jpg" alt="picture of Raunak Agarwal" class="intro_img">
+            
+            
         </section>
+        
+        <!--My work-->
+        <section class="my_work" id="work">
+            <h2 class="section_title section_title_my_work">My projects</h2>
+            <p class="section_subtitle section_subtitle_my_work">Here is some of my selected work</p>
+
+            <div class="portfolio">
+                <a href="portfolio-index.html" class="portfolio_item">
+                    <img src="img/cmput275proj.png" alt="portfolio_img" class="portfolio_img">
+                    <div class="text_pic">
+                        <p>Universal Navigation System</p>
+                    </div>
+                </a>
+                <a href="portfolio-index.html" class="portfolio_item">
+                    <img src="img/classifier.jpg" alt="portfolio_img" class="portfolio_img">
+                    <div class="text_pic">
+                        <p>OOPS classifier</p>
+                    </div>
+                </a>
+                <a href="portfolio-index.html" class="portfolio_item">
+                    <img src="img/sqlproject.JPG" alt="portfolio_img" class="portfolio_img">
+                    <div class="text_pic">
+                        <p>Movie data analysis</p>
+                    </div>
+                </a>
+                <a href="portfolio-index.html" class="portfolio_item">
+                    <img src="img/ui_ux_proj.JPG" alt="portfolio_img" class="portfolio_img">
+                    <div class="text_pic">
+                        <p>UI/UX design</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Volunteering -->
+        <section class="volunteering" id="volunteering">
+            <div class="vol_title">
+                <h2>Volunteering</h2>
+            </div>
+            <div class="vol_container">
+                <div class="vol vol_1">
+                    <img src="img/vol_act1.jpg" alt="act_1" class="act ">
+                    <div class="act_text">
+                        <p> I was a campus kichen volunteer. Taught cooking to a group of 15-20 students
+                            while building a friendly and safe community for them.
+                        </p>
+                    </div>
+                </div>
+                <div class="vol vol_2">
+                    <img src="img/vol_3.jpg" alt="act_1" class="act">
+                    <div class="act_text">
+                        <p> As a faculty leader at the Week of Welcome, I took groups of 30 students
+                            on campus wide tours. I fostered a safe environment to ask questions about
+                            acacemic and social life.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vol vol_3">
+                    <img src="img/vol_act4.JPG" alt="act_1" class="act">
+                    <div class="act_text">
+                        <p> Along with Pei, I mentored High school students.
+                            We taught them to build a social media website using Django.
+                            It was completely virtual class that lasted 8 weeks.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vol vol_4">
+                    <img src="img/vol_2.jpg" alt="act_1" class="act">
+                    <div class="act_text">
+                        <p> I did this and that</p>
+                    </div>
+                </div>    
+
+            </div>
+
+
+        </section>
+
+        <!--About me-->
+        <!-- <section class="section_about_me" id="about">
+            <h2 class="section_title section_title_about_me">Who I am</h2>
+            <p class="section_subtitle section_subtitle_about">
+                Student
+            </p>
+            <div class="about_me_body">
+                <p>ssd</p>
+            </div>
+            <img src="img/doing_something.jpg" alt="Raunak doing something" class="about_me_img">
+        </section> -->
+
+        <!-- Hobbies/Skills -->
+
+        <section class="hob_skills" id="hob/skills">
+            <div class="hob_skills_container">
+                <div class="Skills">
+                    <h2 class="skills_head">Skills</h2>
+                    <div class="skills_container">
+                        <div class="skill">
+                            <i class="fa-brands fa-figma fa-3x"></i>
+                            <p>Figma</p>    
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-python fa-3x"></i>
+                            <p>Python</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-solid fa-laptop-code fa-3x"></i>
+                            <p>C++</p>
+                        </div>
+                        
+                        <div class="skill">
+                            <i class="fa-solid fa-database fa-3x"></i>
+                            <p>SQLite</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-html5 fa-3x"></i>
+                            <p>HTML-5</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-css3-alt fa-3x"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-js fa-3x" style="padding-left: 20px;"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-solid fa-chart-line fa-3x" style="padding-left:20px;"></i>
+                            <p>Data Analysis</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-microsoft fa-3x" style="padding-left:20px;"></i>
+                            <p>MS office</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="Hobbies">
+                    <h2 class="Hobbies_head">Hobbies</h2>
+                    <div class="hob_container">
+                        <div class="skill">j</div>
+                        <div class="skill">j</div>
+                        <div class="skill">j</div>
+                        <div class="skill">j</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
         <!-- My services-->
-        <section class="my_services" id="services">
+        <!-- <section class="my_services" id="services">
             <h2 class="section_title section_title_services">What I do</h2>
             <div class="services">
                 <div class="service">
@@ -64,39 +227,8 @@
                 </div>
             </div>
             <a href="#work" class="btn">My Work</a>
-        </section>
-        <!--About me-->
-        <section class="section_about_me" id="about">
-            <h2 class="section_title section_title_about_me">Who I am</h2>
-            <p class="section_subtitle section_subtitle_about">
-                Student
-            </p>
-            <div class="about_me_body">
-                <p>ssd</p>
-            </div>
-            <img src="img/doing_something.jpg" alt="Raunak doing something" class="about_me_img">
-        </section>
-
-        <!--My work-->
-        <section class="my_work" id="work">
-            <h2 class="section_title section_title_my_work">My work</h2>
-            <p class="section_subtitle section_subtitle_my_work">Here is some of my selected work</p>
-
-            <div class="portfolio">
-                <a href="#" class="portfolio_item">
-                    <img src="img/portfolio01.jpg" alt="portfolio_img" class="portfolio_img">
-                </a>
-                <a href="#" class="portfolio_item">
-                    <img src="img/portfolio02.jpg" alt="portfolio_img" class="portfolio_img">
-                </a>
-                <a href="#" class="portfolio_item">
-                    <img src="img/portfolio03.jpg" alt="portfolio_img" class="portfolio_img">
-                </a>
-                <a href="#" class="portfolio_item">
-                    <img src="img/portfolio04.jpg" alt="portfolio_img" class="portfolio_img">
-                </a>
-            </div>
-        </section>
+        </section> -->
+                
 
         <!--Footer-->
         <footer class="footer">
@@ -108,11 +240,13 @@
                     </a>
                 </li>
                 <li class="social_list_item">
-                    <a class="social_list_link" href="linkedin.com">
+                    <a class="social_list_link" href="https://ca.linkedin.com/in/raunak-agarwal-ab799819a?trk=profile-badge">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </li>
             </ul>
         </footer>
+
+        <script src="js/index.js"></script>
     </body>
 </html>
