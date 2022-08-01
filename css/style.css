@@ -431,6 +431,7 @@ header {
 
 
 .portfolio_item:focus .portfolio_img {
+    transform: scale(1.4);
     opacity: 0.75;
 }
 
@@ -538,6 +539,11 @@ header {
     font-weight: 400;
 }
 
+.act_text p{
+    margin-bottom: 0px;
+}
+
+
 .vol:hover .act{
     opacity: 0.3;
 }
@@ -546,7 +552,19 @@ header {
     opacity: 1;
 }
 
-    
+.vol:focus{
+    position: relative;
+    z-index: 2;
+}
+
+.act:focus{
+    opacity: 0.3;
+}
+
+/* .vol:focus .act_text{
+    opacity: 1;
+}
+     */
 .hob_skills_container{
     display: grid;
     position: relative;
@@ -570,8 +588,10 @@ header {
 .skills_head{
     position: relative;
     margin-top: 10px;
+    margin-left: 13%;
     /* left: 30%; */
-    padding-left: 30%;
+    /* padding-left: 33%; */
+    /* padding-right: 50%; */
 }
 .skill{
     position: relative;
@@ -579,19 +599,22 @@ header {
     color: #fff;
     justify-self: center;
     align-self: center;
-    transition: transform 300ms ease-in-out;
+    transition: transform 1s ;
 }
 
+.skill p{
+    text-align: center;
+}
 .skill:hover i{
-    transform: scale(1.1);
     color: #16e0bd;
+    transform: scale(1.1);
 }
 
 .skills_container{
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 20px 5px;
+    margin: 40px 5px;
 }
 
 @media(min-width: 712px){
@@ -604,6 +627,11 @@ header {
     .skills_container{
         border-bottom: #16e0bd solid 2px;
     }
+
+    .skill .da{
+        padding-left: 20px;
+        text-align: left;
+    }
 }
 
 .Hobbies{
@@ -614,7 +642,10 @@ header {
 .Hobbies_head{
     position: relative;
     margin-top:10px;
-    padding-left: 30%;
+    /* padding-left: 33%; */
+    align-self: center;
+    justify-self: center;
+    /* padding-right: 33%; */
 }
 
 .hob_skills{
@@ -624,10 +655,24 @@ header {
 }
 
 .hob_container{
+    position:relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /* margin-top: 40px; */
+    margin: 40px 5px;
 }
 
+
 .hobby{
-    background-color: #16e0bd;
+    /* background-color: #16e0bd; */
+    max-width: 170px;
+    max-height: 170px;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    margin:10px;
+}
+
+.hobby img{
+    border-radius: 10px;
 }
