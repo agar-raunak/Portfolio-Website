@@ -237,6 +237,7 @@ header {
 
 .intro {
     position: relative;
+    padding-top:30px;
 }
 
 .section_subtitle_intro{
@@ -281,16 +282,16 @@ header {
 }
 
 /* My services section */
-
+/* 
 .my_services {
     background-color: var(--clr-dark);
     background-image: url(../img/services.jpg);
     color: var(--clr-light);
     background-size: cover;
     text-align: center;
-}
+} */
 
-.section_title_services {
+/* .section_title_services {
     color: var(--clr-accent);
     position: relative;
 }
@@ -326,17 +327,17 @@ header {
     .service + .service {
         margin-left: 2em;
     }
-}
+} */
 
-.section_about_me {
+/* .section_about_me {
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .about_me_img{
     box-shadow: var(--bs);
-}
-@media (min-width: 600px){
+} */
+/* @media (min-width: 600px){
     .section_about_me {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -371,7 +372,7 @@ header {
     .about_me_body {
         grid-area: text;
     }
-}
+} */
 
 /* My work */
 .my_work{
@@ -457,9 +458,16 @@ header {
 .footer_link {
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
+    justify-content: center;
 }
 
-.footer_link:hover{
+.footer_email{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_email:hover{
     text-decoration: underline;
 }
 
@@ -469,6 +477,8 @@ header {
     justify-content: center;
     margin: 2em 0 0;
     padding: 0;
+    padding-bottom: 20px;
+
 }
 
 .social_list_item{
@@ -552,14 +562,21 @@ header {
     opacity: 1;
 }
 
-.vol:focus{
+.vol:focus-within{
     position: relative;
     z-index: 2;
 }
 
-.act:focus{
+.vol:focus-within .act{
     opacity: 0.3;
 }
+
+.vol:focus-within .act_text{
+    opacity: 1;
+}
+/* .act:focus{
+    opacity: 0.3;
+} */
 
 /* .vol:focus .act_text{
     opacity: 1;
@@ -632,6 +649,10 @@ header {
         padding-left: 20px;
         text-align: left;
     }
+    .intro_img{
+        max-width: 300px;
+        max-height: 400px;
+    }
 }
 
 .Hobbies{
@@ -642,7 +663,7 @@ header {
 .Hobbies_head{
     position: relative;
     margin-top:10px;
-    /* padding-left: 33%; */
+    margin-left: 13%;
     align-self: center;
     justify-self: center;
     /* padding-right: 33%; */
