@@ -385,6 +385,7 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+
 }
 
 .portfolio_item{
@@ -394,6 +395,7 @@ header {
     border-radius: 10px;
     position: relative;
 }
+
 
 .portfolio_img{
     transition:transform 350ms ease-in-out;
@@ -421,8 +423,15 @@ header {
     color:#fff;
     
 }
+@media(max-width:1000px){
+    .da{
+        margin-top: 8px;
+    }
 
-
+    .act_text{
+        font-size: 2vw;
+    }
+}
 
 .portfolio_item > .portfolio_img{
     object-fit: cover;
@@ -545,7 +554,7 @@ header {
     bottom: 10px;
     left: 10px;
     transition: 300ms ease-in-out;
-    font-size: 1.5vw;
+    /* font-size: 15px; */
     font-weight: 400;
 }
 
@@ -654,7 +663,7 @@ header {
         max-height: 400px;
     }
 
- 
+    
 }
 
 .Hobbies{
