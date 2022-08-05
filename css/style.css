@@ -95,6 +95,7 @@ strong{
     outline-offset: 3px;
 }
 
+
 h1 {font-size: var(--fs-h1);}
 h2 {font-size: var(--fs-h2);}
 h3 {font-size: var(--fs-h3);}
@@ -129,7 +130,7 @@ h3 {font-size: var(--fs-h3);}
 header {
     display: flex;
     justify-content: space-between;
-    margin-bottom:2em;    
+    margin-bottom:1em;    
 }
 
 .logo{
@@ -281,98 +282,7 @@ header {
 
 }
 
-/* My services section */
-/* 
-.my_services {
-    background-color: var(--clr-dark);
-    background-image: url(../img/services.jpg);
-    color: var(--clr-light);
-    background-size: cover;
-    text-align: center;
-} */
 
-/* .section_title_services {
-    color: var(--clr-accent);
-    position: relative;
-}
-
-.section_title_services::after {
-    content: '';
-    display: block;
-    width: 2.5em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    opacity: 0.25;
-    background: var(--clr-light);
-}
-
-.service {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-}
-
-.services {
-    margin-bottom: 4em;
-}
-
-@media(min-width: 800px){
-    .services{
-        display:flex;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-
-    .service + .service {
-        margin-left: 2em;
-    }
-} */
-
-/* .section_about_me {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.about_me_img{
-    box-shadow: var(--bs);
-} */
-/* @media (min-width: 600px){
-    .section_about_me {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-areas: 
-                "title img"
-                "subtitle img"
-                "text img";
-        grid-column-gap: 2em;
-    }
-
-    .about_me_img{
-        grid-area:img;
-        position: relative;
-    }
-
-    .section_title_about_me{
-        grid-area: title;
-    }
-
-    .section_subtitle_about{
-        grid-column: 1/-1;
-        grid-row: 2;
-        position:relative;
-        left:-1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: cacl(200px+4em);
-        margin-bottom: auto;
-
-    }
-
-    .about_me_body {
-        grid-area: text;
-    }
-} */
 
 /* My work */
 .my_work{
@@ -583,14 +493,7 @@ header {
 .vol:focus-within .act_text{
     opacity: 1;
 }
-/* .act:focus{
-    opacity: 0.3;
-} */
 
-/* .vol:focus .act_text{
-    opacity: 1;
-}
-     */
 .hob_skills_container{
     display: grid;
     position: relative;
@@ -663,7 +566,6 @@ header {
         max-height: 400px;
     }
 
-    
 }
 
 .Hobbies{
@@ -707,4 +609,111 @@ header {
 
 .hobby img{
     border-radius: 10px;
+}
+
+@media(min-width:900px){
+    .ab{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    .port_img{
+        transform: translateX(50%);
+    }
+
+    .port_1:hover .port_img{
+        transform: translateX(0%);
+        width: 100%;
+    }
+    
+    .port_1:hover .ab{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    :focus{
+        outline: 3px solid var(--clr-light);
+        outline-offset: 3px;
+    }
+    .port_1:focus .port_img{
+        transform: translateX(0%);
+        width: 100%;
+        
+    }
+
+    .port_1:focus .ab{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+}
+
+.ab{
+    position: relative;
+    /* transform: translateX(-50%); */
+    transition: 300ms ease-in-out;
+    color: var(--clr-dark);
+    align-items: center;
+    align-self: center;
+}
+
+.port_1{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); 
+    column-gap: 1em;
+
+}
+.portfolio_section{
+    /* background-color: #D88C9A; */
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.port_container{
+    padding: 1em;
+}
+
+.port_img{
+    position:relative;
+    height: 100%;
+    width: 120%;
+    z-index: 3;
+    transition: 300ms ease-in-out;
+    border: #111 solid 2px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: var(--bs);
+}
+
+
+.skill_learn{
+    background-color: #F1E3D3;
+    border-radius: 20px;
+    padding:5px;
+    margin-top: 10px;
+    border: #fff solid 2px;
+    background-clip: content-box;
+
+}
+
+.skill_learn ul{
+    padding-left: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.skill_learn li{
+    margin-right: 30px;
+}
+
+.port_info{
+    background-color: #F1E3D3;
+    border-radius: 20px;
+    border: #fff solid 2px;
+    padding:5px;
+    background-clip: content-box;
 }

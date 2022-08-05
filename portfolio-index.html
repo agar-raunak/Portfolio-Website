@@ -10,6 +10,7 @@
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
 
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="img/logo.png"/>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <script src="https://kit.fontawesome.com/e5aa639bc0.js" crossorigin="anonymous"></script>
     </head>
@@ -25,51 +26,171 @@
                 <ul class="nav_list">
                     <li class = "nav-item"><a href="index.html#about" class="nav-link">About Me</a></li>
                     <li class = "nav-item"><a href="index.html#work" class="nav-link">My projects</a></li>
-                    <li class = "nav-item"><a href="#volunteering" class="nav-link">Volunteering</a></li>
-                    <li class = "nav-item"><a href="#hobbies" class="nav-link">Hobbies</a></li>
-                    <li class = "nav-item"><a href="#contactme" class="nav-link">Contact me</a></li>
+                    <li class = "nav-item"><a href="index.html#volunteering" class="nav-link">Volunteering</a></li>
+                    <li class= "nav-item" ><a href="index.html#skills" class="nav-link">Skills </a></li>
+                    <li class = "nav-item"><a href="index.html#hobbies" class="nav-link">Hobbies</a></li>
+                    <li class = "nav-item"><a href="index.html#contactme" class="nav-link">Contact me</a></li>
 
                 </ul>
             </nav>
         </header>
         
-        <section class="intro">
-            <h1 class="section_title section_title_intro">
-                All of my<strong> Projects</strong>
-            </h1>
-            <p class="section_subtitle section_subtitle_intro">Project 1</p>
-            <img src="img/raunak.jpg" alt="picture of Raunak Agarwal" class="intro_img">
-        </section>
-
-        <div class="portfolio_item_individual">
-
-            <h2>
-                edhdwsnsaknxsidnn idnaq
-            </h2>
-
-            <img src="img/portfolio01.jpg">
-            <p>
-                sdh8asianmdkb asuhaMLAM82EQUS SIDH8NSKNAN A wsdkma
-                eddddddddddddddddddddddddddddddddddddddd
-                dddddddddddddddddddddddddddddddddddddddddddddddddddddd
-            </p>
-            <p>
-                sdihsudhao idjaijssiaidnwsid isjdiasozndias isjdiasozndias
-            </p>
+        <div class="portfolio_head">
+            <h2 style="text-align: center;">Lets have a look at my work</h2>
         </div>
 
+        <section class="portfolio_section" id="portfolio_section">
+            <div class="port_container" style="background-color:#D88C9A;" id="uns">
+                <h3 style="padding-bottom: 1em; ">Universal Navigation System</h3>
+                <div class="port_1" tabindex="0">
+                    
+                    <img src="img/cmput275proj.png" alt="Universal Navigation System image" class="port_img">
+                    <div class="ab">
+                        <div class="skill_learn" style="margin-bottom:10px">
+                            <h3 >
+                                Skills
+                            </h3>
+                            <ul>
+                                <li>C++</li>
+                                <li>Object Oriented Programming</li>
+                                <li>Graph Theory</li>
+                                <li>Dijkstra Theorem</li>
+                                <li>Depth/Breadth First Search</li>
+                                <li>Server-Client communication</li>
+                            </ul>
+                        </div>
+                            
+                        <div class="port_info" style="margin: top 10px;">
+                            <p style="margin-top: 10px; margin-bottom:10px;">
+                                The project involved building a navigation system/path-finder program, in C++, which makes use of server-client connection.
+                                The Client would receive coordinates of the start and end points from a GUI based map of Edmonton.
+                                After establishing a connection with the server, it would send these coordinates to it. The server would make
+                                 use of the above-mentioned algorithms to find the shortest path between these two points. If the path exists, it would send
+                                  the coordinates to the client once at a time and then the client would write them to a pipe to be used by the map. 
+                                  The path would then get displayed on the map and the user could select another pair of points after that. 
+                                  If the path did not exist, the map would get 2 dots, with no path between them.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port_container" style="background-color:#B8B8FF;" id="oopsc">
+                <h3 style="padding-bottom: 1em; ">Object Oriented Design based Data Classifier</h3>
+                <div class="port_1" tabindex="0">
+                    
+                    <img src="img/classifier1.jpg" alt="OOPS classifier" class="port_img">
+                    <div class="ab">
+                        <div class="skill_learn" style="margin-bottom:10px; background-color: #FFEEDD;">
+                            <h3 >
+                                Skills
+                            </h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>Object Oriented Programming/li>
+                                <li>Pre-processing</li>
+                                <li>k-cross validation</li>
+                                <li>Accuracy</li>
+                                <li>Precision</li>
+                                <li>Recall</li>
+                            </ul>
+                        </div>
+                            
+                        <div class="port_info" style="margin: top 10px; background-color: #FFEEDD">
+                            <p style="margin-top: 10px; margin-bottom:10px;">
+                                This project involved building an object-oriented weather data classifier in python.
+                                The data would be pre-processed by removing punctuation, helping words and numbers (unless specified otherwise).
+                                 Next it calculated the frequency of the words. After that we would train the classifier based on the top n words.
+                                  This would become our training set. Finally, we would perform k-fold cross validation on the same data set to check
+                                   for precision, accuracy and Recall of the model.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="port_container" style="background-color:#99c1b9;" id="mda">
+                <h3 style="padding-bottom: 1em; ">Movie Data Analysis</h3>
+                <div class="port_1" tabindex="0">
+                    
+                    <img src="img/sqlproject.JPG" alt="Movie Data Analysis" class="port_img">
+                    <div class="ab">
+                        <div class="skill_learn" style="margin-bottom:10px; background-color: #F1E3D3;">
+                            <h3 >
+                                Skills
+                            </h3>
+                            <ul>
+                                <li>Sqlite</li>
+                                <li>Python</li>
+                                <li>MatPlotLib</li>
+                                <li>Query Indexing</li>
+                                <li>Leadership</li>
+                                <li>Team-management</li>
+                            </ul>
+                        </div>
+                            
+                        <div class="port_info" style="margin: top 10px; background-color: #F1E3D3">
+                            <p style="margin-top: 10px; margin-bottom:10px;">
+                                Managed a team of 4 to analyse data using sqlite and python.
+                                I conducted 2-3 meetings per week, assigning duties, reviewing completed work
+                                and solving problems faced by any member of the team. The project involved writing queries and
+                                optimizing them. We presented the non-optimized, self-optimized and user-optimized 
+                                query run-times on a bar-graph using matplotlib.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="port_container" style="background-color:#F2D0A9;" id="uiuxp">
+                <h3 style="padding-bottom: 1em; ">UI/UX design project</h3>
+                <div class="port_1" tabindex="0">
+                    
+                    <img src="img/ui_ux_proj.JPG" alt="UI/UX Design Project" class="port_img">
+                    <div class="ab">
+                        <div class="skill_learn" style="margin-bottom:10px; background-color: #F1E3D3;">
+                            <h3 >
+                                Skills
+                            </h3>
+                            <ul>
+                                <li>User Research</li>
+                                <li>User Persona Development</li>
+                                <li>Wireframing</li>
+                                <li>Prototyping</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+                            
+                        <div class="port_info" style="margin: top 10px; background-color: #F1E3D3">
+                            <p style="margin-top: 10px; margin-bottom:10px;">
+                                The project began with conducting user research for an Ecommerce plants and equipment app
+                                design. Collected data from 10 users. Used that to make user personas and understand their pain 
+                                points. Observed currently existing apps in the same field.
+                                User the research to implement a solution and develop user stories. Began to wireframe my application
+                                on figma and then prototype it. Currently its at a user validation Stage
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--Footer-->
-        <footer class="footer">
-            <a href="mailto:raunak1@ualberta.ca" class="footer_link">raunak1@ualberta.ca</a>
+        <footer class="footer" id="contactme">
+            
+            <ul class="footer_email">
+                <li><i class="fa-solid fa-envelope" style="color: #16e0bd; margin:10px;"></i></li>
+                <li></li><a href="mailto:raunak1@ualberta.ca" class="footer_link">
+                    raunak1@ualberta.ca    
+                </a></li>
+            </ul>
+                
             <ul class="social_list">
                 <li class="social_list_item">
-                    <a class="social_list_link" href="github.com/agar-raunak">
+                    <a class="social_list_link" href="https://github.com/agar-raunak" target="_blank">
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
                 <li class="social_list_item">
-                    <a class="social_list_link" href="linkedin.com">
+                    <a class="social_list_link" href="https://ca.linkedin.com/in/raunak-agarwal-ab799819a?trk=profile-badge" target="_blank">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </li>
