@@ -1,6 +1,6 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav-link')
-const port = document.querySelector('port_1')
+// const port = document.querySelector('port_1')
 
 // Clicking on the nav-toggle will result in opening of class nav-open
 
@@ -15,6 +15,3 @@ navLinks.forEach(link => {
 })
 
 
-port.addEventListener('mouseover', ()=>{
-    document.body.classList.toggle('port-open')
-})

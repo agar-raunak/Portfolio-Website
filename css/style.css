@@ -333,6 +333,8 @@ header {
     color:#fff;
     
 }
+
+
 @media(max-width:1000px){
     .da{
         margin-top: 8px;
@@ -611,6 +613,12 @@ header {
     border-radius: 10px;
 }
 
+@media(max-width:900px) {
+    .skill_learn{
+        margin-top: 10px;
+    }
+}
+
 @media(min-width:900px){
     .ab{
         opacity: 0;
@@ -645,7 +653,6 @@ header {
         transform: translateX(0%);
         opacity: 1;
     }
-
 }
 
 .ab{
@@ -662,6 +669,7 @@ header {
     position: relative;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); 
     column-gap: 1em;
+    text-decoration: none;
 
 }
 .portfolio_section{
@@ -691,7 +699,7 @@ header {
     background-color: #F1E3D3;
     border-radius: 20px;
     padding:5px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border: #fff solid 2px;
     background-clip: content-box;
 
