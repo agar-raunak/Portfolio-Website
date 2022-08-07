@@ -326,14 +326,19 @@ header {
 .text_pic{
     text-decoration: none;
     position: absolute;
+    display: flex;
+    list-style: none;
     left: 20px;
     top: 80%;
-    /* margin-top: 5; */
-    /* margin-left: 5; */
+    padding-left:0px ;
+
     color:#fff;
     
 }
 
+.text_pic i{
+    padding-left: 10px;
+}
 
 @media(max-width:1000px){
     .da{
@@ -342,6 +347,10 @@ header {
 
     .act_text{
         font-size: 2vw;
+    }
+
+    .text_pic{
+        margin-top: 10px;
     }
 }
 
